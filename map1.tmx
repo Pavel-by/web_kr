@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="64" tileheight="64" infinite="0" nextlayerid="3" nextobjectid="10">
+ <tileset firstgid="1" name="tileset" tilewidth="64" tileheight="64" tilecount="100" columns="10">
+  <image source="tiles/tileset.png" width="640" height="640"/>
+ </tileset>
+ <layer id="1" name="Tileset" width="20" height="20">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,
+1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,
+1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,
+1,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,
+1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,
+1,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,0,1,0,1,
+1,0,1,0,1,0,1,0,0,0,0,1,0,1,0,1,0,1,0,1,
+1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,
+1,0,1,0,1,0,1,0,1,1,1,1,0,1,0,1,0,1,0,1,
+1,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,1,
+1,0,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,
+1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,
+1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,
+1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,
+1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="2" name="Objects">
+  <object id="1" name="Player" type="Player" x="67.7953" y="75.5746" width="48" height="48"/>
+  <object id="2" name="Enemy 1" type="EnemyTank" x="1156.89" y="136.253" width="48" height="48">
+   <properties>
+    <property name="move_x" type="int" value="1"/>
+    <property name="move_y" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="3" name="Enemy 2" type="EnemyTank" x="1156.89" y="1096.21" width="48" height="48">
+   <properties>
+    <property name="move_x" type="int" value="1"/>
+    <property name="move_y" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="4" name="Enemy 3" type="EnemyTank" x="134.697" y="1158.45" width="48" height="48">
+   <properties>
+    <property name="move_x" type="int" value="0"/>
+    <property name="move_y" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="5" name="Enemy 4" type="EnemyTank" x="70.907" y="260.721" width="48" height="48">
+   <properties>
+    <property name="move_x" type="int" value="1"/>
+    <property name="move_y" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="6" name="BonusRocket 1" type="BonusRocket" x="198.487" y="67.7953" width="48" height="48"/>
+  <object id="7" name="BonusOil 1" type="BonusOil" x="645.017" y="645.017" width="48" height="48"/>
+  <object id="8" name="BonusOil 2" type="BonusOil" x="646.573" y="579.671" width="48" height="48"/>
+  <object id="9" name="BonusOil 3" type="BonusOil" x="1160" y="1158.45" width="48" height="48"/>
+ </objectgroup>
+</map>

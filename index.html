@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>ААААААААААА</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<div>
+    <div style="display: inline-block;">
+        <canvas id="canvas" width="700" height="700" style="border: 1px solid black;"></canvas>
+    </div>
+    <div style="display: inline-block; vertical-align: top">
+        <h3>Уровень <span id="level"></span></h3>
+        <p><b>Убийства: </b><span id="kills"></span></p>
+        <p><b>Жизни: </b><span id="lifetime"></span></p>
+        <p><b>Урон: </b><span id="damage"></span></p>
+        <button onclick="statisticsManager.restartLevel()">Перезапустить уровень</button>
+        <p id="fail-message" style="color: red"><b>Вы проиграли</b></p>
+        <p id="win-message" style="color: green"><b>Вы выиграли</b></p>
+        <input type="button" value="На предыдущий уровень" onclick="statisticsManager.prevLevel()"
+               id="prev-level-button"/>
+        <input type="button" value="На следующий уровень" onclick="statisticsManager.nextLevel()" id="next-level-button">
+    </div>
+</div>
+
+<script src="/js/managers/mapManager.js"></script>
+<script src="/js/managers/spriteManager.js"></script>
+<script src="/js/managers/eventsManager.js"></script>
+<script src="/js/managers/physicManager.js"></script>
+<script src="/js/managers/soundManager.js"></script>
+<script src="/js/managers/gameManager.js"></script>
+<script src="/js/managers/statisticsManager.js"></script>
+<script src="/js/entity.js"></script>
+<script>
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+    soundManager.init();
+    soundManager.loadArray(["/sound/main.mp3"]);
+    soundManager.play("/sound/main.mp3", {looping: true});
+    gameManager.loadAll(ctx);
+    gameManager.play(ctx);
+</script>
+</body>
+</html>
